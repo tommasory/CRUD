@@ -1,0 +1,6 @@
+*Pipfile
+*.lock
+*.env
+*sqlite3
+*migrations
+/media
