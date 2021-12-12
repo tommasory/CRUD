@@ -11,7 +11,7 @@
     <title>{% block titulo%}Lista de Contactos {% endblock titulo %}</title>
 
     {% block cuerpo %}
-    <h1>Lista de Contactos</h1>
+    <h1>Lista de Contactos : <a href="{% url 'crear_persona' %}">Crear</a></h1>
 
     <table border = "2">
         <thead>
@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-          {% for persona in personas %}
+            {% for persona in object_list %}
             <tr>
                 <td>{{persona.nombre}}</td>
                 <td>{{persona.apellido}}</td>

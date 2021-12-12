@@ -1,7 +1,6 @@
 {% extends 'index.html' %}
 {% block titulo %} Formulario de contacto {% endblock titulo%}
 {% block cuerpo %}
-    
     <form method="POST" %>
         {% csrf_token %}
         {{form.as_p}}
