@@ -28,7 +28,10 @@
                 <td>{{persona.nombre}}</td>
                 <td>{{persona.apellido}}</td>
                 <td>{{persona.correo}}</td>
-                <td> <a href="#">Editar</a> <a href="#">Eliminar</a></td>
+                <td>
+                    <a href="{% url 'editar_persona' persona.id %}">Editar</a> 
+                    <a href="{% url 'eliminar_persona' persona.id %}">Eliminar</a>
+                </td>
                 
             </tr>
             {% endfor %}
