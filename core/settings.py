@@ -43,6 +43,7 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
+    'controller.apps.ControllerConfig',
 ]
 
 THIRD_APPS = [
