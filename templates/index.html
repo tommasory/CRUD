@@ -8,5 +8,26 @@
 </head>
 <body>
     <h1>Hola soy una prueba de templates HTML!</h1>
+    <table border = "2">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Opción</th>
+            </tr>
+        </thead>
+        <tbody>
+          {% for persona in personas %}
+            <tr>
+                <td>{{persona.nombre}}</td>
+                <td>{{persona.apellido}}</td>
+                <td>{{persona.correo}}</td>
+                <td> <a href="#">Editar</a> <a href="#">Eliminar</a></td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
