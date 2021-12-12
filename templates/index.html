@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>Hola soy una prueba de templates HTML!</h1>
+    <title>{% block titulo%}Lista de Contactos {% endblock titulo %}</title>
+
+    {% block cuerpo %}
+    <h1>Lista de Contactos</h1>
+
     <table border = "2">
         <thead>
             <tr>
@@ -29,5 +34,6 @@
             {% endfor %}
         </tbody>
     </table>
+    {% endblock cuerpo %}
 </body>
 </html>
